@@ -1,0 +1,8 @@
+[00:38:46 INF] HTTP GET /api/standings/top-scorers responded 200 in 98.9965 ms TraceId=d2bd88f961e57a2141cc452ece07d261
+[00:38:46 INF] Request completed GET /api/standings/top-scorers Status=200 DurationMs=133 TraceId=496e8c410b5f4199913e86272b533fb5 TraceId=d2bd88f961e57a2141cc452ece07d261
+[00:38:46 INF] HTTP GET /api/standings responded 200 in 16.3355 ms TraceId=c721827b98ed7494ad64c968a773b34c
+[00:38:46 INF] Request completed GET /api/standings Status=200 DurationMs=16 TraceId=2a5026e4c8584ba29120468b24b71b37 TraceId=c721827b98ed7494ad64c968a773b34c
+[00:38:46 INF] HTTP GET /api/standings responded 200 in 9.9354 ms TraceId=27f4aeae3b97e60dfcd47704f0ef527f
+[00:38:46 INF] Request completed GET /api/standings Status=200 DurationMs=10 TraceId=d42d8a88a1284b79b9bb6cba228095a7 TraceId=27f4aeae3b97e60dfcd47704f0ef527f
+[00:38:46 INF] HTTP GET /api/standings/top-scorers responded 200 in 0.4538 ms TraceId=9e4f31efd8d2f0aab691af55e6f1547c
+[00:38:46 INF] Request completed GET /api/standings/top-scorers Status=200 DurationMs=0 TraceId=ddb23d09dcbd429396c4d7e36d9f1f04 TraceId=9e4f31efd8d2f0aab691af55e6f1547c
