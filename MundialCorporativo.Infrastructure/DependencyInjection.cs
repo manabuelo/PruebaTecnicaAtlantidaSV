@@ -8,7 +8,6 @@ using MundialCorporativo.Application.Abstractions.Read;
 using MundialCorporativo.Infrastructure.Persistence;
 using MundialCorporativo.Infrastructure.Persistence.Repositories;
 using MundialCorporativo.Infrastructure.Read;
-using MundialCorporativo.Infrastructure.Seed;
 using MundialCorporativo.Infrastructure.Services;
 
 namespace MundialCorporativo.Infrastructure;
@@ -26,12 +25,12 @@ public static class DependencyInjection
         services.AddScoped<ITeamRepository, TeamRepository>();
         services.AddScoped<IPlayerRepository, PlayerRepository>();
         services.AddScoped<IMatchRepository, MatchRepository>();
+        services.AddScoped<IMatchScoreRepository, MatchScoreRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<IReadDbConnectionFactory>(_ => new ReadDbConnectionFactory(connectionString));
         services.AddScoped<IDomainEventLogger, DomainEventLogger>();
         services.AddScoped<IIdempotencyService, IdempotencyService>();
-        services.AddScoped<DatabaseSeeder>();
 
         return services;
     }

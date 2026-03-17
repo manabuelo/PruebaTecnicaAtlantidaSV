@@ -26,7 +26,7 @@ public class DomainEventLogger : IDomainEventLogger
         {
             Id = Guid.NewGuid(),
             EventType = domainEvent.GetType().Name,
-            Payload = JsonSerializer.Serialize(domainEvent),
+            Payload = JsonSerializer.Serialize(domainEvent, domainEvent.GetType()),
             TraceId = traceId,
             OccurredOnUtc = domainEvent.OccurredOnUtc
         }, cancellationToken).AsTask();
